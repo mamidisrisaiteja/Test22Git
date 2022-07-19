@@ -30,7 +30,7 @@ public class StepDefinition1 {
 	public Response the_user_adds_the_new_place_details() throws Exception {
 	    // Write code here that turns the phrase above into concrete actions
 		JSONParser jsonParser=new JSONParser(); //it performs operations on jsondata
-		FileReader fr=new FileReader("C:\\Users\\AN574BV\\eclipse-workspace\\Test22\\src\\test\\java\\objectresources\\demoJson.json");//it reads jsondata butnot know how to handle with it
+		FileReader fr=new FileReader("C:\\Users\\AN574BV\\git\\TejaToJasmiCucu1507221713\\Test22Git\\Test22\\src\\test\\java\\objectresources\\demoJson.json");//it reads jsondata butnot know how to handle with it
 		Object obj=	jsonParser.parse(fr);//storing file content in java object(obj)
 		JSONObject jsonobject=(JSONObject)obj;// typecasting javaobject into jsonobject
 		      String strobj=jsonobject.toString();   // inorder to transport the data through network we have to serialize the data(converted into string)
